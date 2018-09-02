@@ -8,7 +8,7 @@ $ip = gethostbyname($host);
 </head>
 <body>
 	<h3>Hello World!</h3>
-	<b>Hostname:</b> <?= $host ?> / <?= $_ENV['HOSTNAME'] ?><br>
+	<b>Hostname:</b> <?= $host ?><br>
 	<b>IP:</b> <?= $ip ?><br />
 	<b>URI:</b> <?= $_SERVER['REQUEST_URI'] ?><br />
 
