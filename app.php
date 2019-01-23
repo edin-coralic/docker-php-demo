@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $file = 'ip.txt';
 if (is_file($file)) {
   $ipP = file_get_contents($file);
@@ -11,6 +13,7 @@ if (is_file($file)) {
 <head>
 </head>
 <body>
+  <h1><?= getenv('X_TITLE') ?></h1>
   <h3>Hello World!</h3>
   <b>Hostname:</b> <?= $host= gethostname() ?><br>
   <b>IP:</b> <?= gethostbyname($host)?><br />
